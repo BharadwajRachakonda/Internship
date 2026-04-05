@@ -1,0 +1,13 @@
+.bgr {
+  background: #374c78;
+  background: linear-gradient(
+    308deg,
+    rgba(55, 76, 120, 1) 43%,
+    rgba(22, 79, 79, 1) 76%,
+    rgba(18, 94, 110, 1) 100%
+  );
+}
+body {
+  width: 100vw;
+  color: whitesmoke;
+}

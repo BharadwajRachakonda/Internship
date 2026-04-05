@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+::picker(select) {
+  border-radius: 16px;
+  border: 0px;
+  background-color: rgba(0, 191, 255, 0);
+  padding: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  backdrop-filter: blur(10px) hue-rotate(10deg) brightness(1.2) contrast(1.1);
+  color: whitesmoke;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
